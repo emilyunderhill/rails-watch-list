@@ -1,0 +1,21 @@
+<div class="banner">
+  <div class="container">
+    <h1>Save any kind of movies</h1>
+    <h3>Anything you want</h3>
+  </div>
+</div>
+
+<div class="container">
+  <div class="index">
+    <h2>My Lists</h2>
+    <%= link_to 'Create a movie list', new_list_path, class: 'btn btn-success'%>
+  </div>
+  <div class="card-container">
+    <% @lists.each do |list| %>
+      <%= link_to list_path(list.id), class: 'card-list' do %>
+          <h3><%= list.name %></h3>
+          <%= link_to 'delete', list_path(list), method: :delete, data: { confirm: "Are you sure?" } %>
+        <% end %>
+      <% end %>
+    </div>
+</div>
