@@ -15,7 +15,7 @@ class BookmarksController < ApplicationController
       render 'new'
     end
   end
-g
+
   def destroy
     @bookmark = Bookmark.find(params[:id])
     @list = List.find(@bookmark.list.id)
