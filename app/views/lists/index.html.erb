@@ -8,14 +8,11 @@
 <div class="container">
   <div class="d-flex mt-3">
     <h2>My Lists</h2>
-    <%= link_to 'Create a movie list', new_list_path, class: 'ml-auto p-2 btn btn-success'%>
+    <%= link_to 'Create a movie list', new_list_path, class: 'ml-auto p-2 btn btn-success' %>
   </div>
   <div class="card-container">
-    <% @lists.each do |list| %>
-      <%= link_to list_path(list.id), class: 'card-list' do %>
-          <h3><%= list.name %></h3>
-          <%= link_to 'delete', list_path(list), method: :delete, data: { confirm: "Are you sure?" } %>
-        <% end %>
-      <% end %>
-    </div>
+    <%# <% @lists.each do |list| %>
+      <%= render 'card' %>
+    <%# <% end %>
+  </div>
 </div>

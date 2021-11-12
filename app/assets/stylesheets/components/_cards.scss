@@ -1,4 +1,13 @@
-.cards-container {
-  display: flex
+.card-container {
+  display: flex;
+}
 
+.card-list {
+  height: 200px;
+  width: 200px;
+  color: white;
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3));
+  text-align: center;
+  background-size: cover;
+  background-position: center;
 }
