@@ -1,6 +1,7 @@
 .card-container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .card-list {
@@ -9,7 +10,7 @@
   border-radius: 5px;
   margin: 20px;
   position: relative;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 
   color: white;
   font-size: larger;
@@ -43,4 +44,34 @@
     }
   }
 
+  &:hover {
+    box-shadow: none;
+
+    .card-title {
+      font-weight: bold;
+    }
+  }
+}
+
+.card-movie {
+  width: 400px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  position: relative;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+
+  img {
+    width: 400px;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .fas {
+    &:hover{
+      color: $red;
+    }
+  }
 }
