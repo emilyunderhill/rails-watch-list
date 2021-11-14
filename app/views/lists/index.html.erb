@@ -1,6 +1,6 @@
 <div class="banner" style="background-image: url('https://source.unsplash.com/evlkOfkQ5rE/1600x900')">
   <div class="container">
-    <h1>Save any kind of movies</h1>
+    <h1>Save any kind of movie</h1>
     <h3>with a simple list</h3>
   </div>
 </div>
@@ -11,8 +11,6 @@
     <%= link_to 'Create a movie list', new_list_path, class: 'ml-auto p-2 btn btn-success' %>
   </div>
   <div class="card-container">
-    <%# <% @lists.each do |list| %>
-      <%= render 'card' %>
-    <%# <% end %>
+    <%= render 'card' %>
   </div>
 </div>
